@@ -1,1 +1,34 @@
-﻿<h2 class="mx-auto my-5 bg-primary w-50 ">Hello In My First View....</h2>
+﻿
+<h2 class="mx-auto my-5 bg-primary w-50 ">Hello In My First View....</h2>
+
+<!--Razer Engin-->
+
+<!--Block Code Syntax-->
+@{
+	int numOne = 10;
+	int numTwo = numOne + 20;
+	
+}
+
+@* Inline Statment *@
+
+<h2>@numOne</h2>
+
+@* Condition Statment *@
+@if(numOne > numTwo)   @*Must Write The {...} After The Condtion*@
+{
+	<h2>Number One = @numOne Is Greater Than Number Two @numTwo</h2>
+}
+else
+{
+	<h2>Number One = @numOne Is Less Than Number Two = @numTwo</h2>
+}
+
+@*Looping Statment => Also We Must Write {..} After Loop Statment*@
+
+<ul>
+	@for(int i = 0 ; i <= 10; i++)
+	{
+		<li>@i</li>
+	}
+</ul>

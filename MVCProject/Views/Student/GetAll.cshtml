@@ -1,0 +1,27 @@
+﻿@model List<Student>
+
+<table class="table table-hover table-bordered">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>Address</th>
+			<th>Age</th>
+			<th>Detailes</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(Student student in Model)
+		{
+			<tr>
+				<td>@student.Id</td>
+				<td>@student.FirstName</td>
+				<td>@student.LastName</td>
+				<td>@student.Address</td>
+				<td>@student.Age</td>
+				<td><a href="/Student/GetStudent/@student.Id">detailes</a></td>
+			</tr>
+		}
+	</tbody>
+</table>

@@ -1,0 +1,14 @@
+﻿
+@model Student
+
+<div class="card" style="width: 18rem;">
+    <img src="/Images/@Model.ImageURL" class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text">
+            Name : @Model.FirstName @Model.LastName<br/>
+            Address : @Model.Address<br/>
+            Age : @Model.Age
+        </p>
+        <a href="/Student/GetAll">Go Back</a>
+    </div>
+</div>
